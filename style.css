@@ -1,5 +1,5 @@
 /*
-Theme Name: DentalQuest AI Child
+Theme Name: ToothTheme
 Theme URI: https://yourwebsite.com/dentalquest-ai
 Author: Your Name
 Author URI: https://yourwebsite.com
@@ -12,21 +12,13 @@ Text Domain: dentalquest-child
 Tags: custom, dental, tailwind, responsive
 */
 
-/*
-IMPORTANT: We're directly including Tailwind via CDN in the head 
-instead of via WordPress enqueue to prevent blank page issues.
-*/
-
-/* Import the parent theme's styles - this is essential */
 @import url('../astra/style.css');
 
-/* Fix for visibility issues */
 body {
     visibility: visible !important;
     display: block !important;
 }
 
-/* Ensure core elements are visible */
 .site-header, 
 .site-content,
 .site-footer,
@@ -37,7 +29,6 @@ body {
     visibility: visible !important;
 }
 
-/* Fix for TailwindCSS possibly hiding content */
 .entry-content, 
 .entry-header, 
 .page-content, 
@@ -46,17 +37,6 @@ body {
     visibility: visible !important;
 }
 
-/* Additional custom styles can be added below */
-
-/* Custom styles that need to override Tailwind or Astra */
 .site-header, .site-footer {
     display: block;
 }
-
-/* Additional failsafe for any conflicts - uncomment if needed */
-/*
-.wp-block, .entry-content, .page-content {
-    visibility: visible !important;
-    display: block !important;
-}
-*/ 
